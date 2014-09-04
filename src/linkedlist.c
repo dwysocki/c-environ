@@ -83,5 +83,12 @@ displayall(Node *root)
 void
 query(Node *root, char *key)
 {
-  ;
+  Node *node;
+  for(node = root; node != NULL; node = node->next) {
+    if (strcmp(node->key, key) == 0) {
+      printf("%s\n", node->contents);
+      return;
+    }
+  }
+  printf("Key %s not found\n", key);
 }

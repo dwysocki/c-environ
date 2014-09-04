@@ -15,5 +15,6 @@ main(int argc, char* argv[])
   //  Node *root = makenode("root", "contents");
   //  Node *child = makenode("child", "moar contents");
   //  addnode(root, child);
-  displayall(root);
+  //  displayall(root);
+  query(root, "A");
 }
