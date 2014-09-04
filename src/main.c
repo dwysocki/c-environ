@@ -14,8 +14,8 @@ dircount(void)
 	char *count = (char *) malloc(1024*sizeof(char));
 	DIR *dirp;
 
-	for(i = -2, dirp = opendir("."); readdir(dirp); i++)
-		;
+	for(i = -2, dirp = opendir("."); readdir(dirp); i++);
+
 	sprintf(count, "%d", i);
 
 	return count;
