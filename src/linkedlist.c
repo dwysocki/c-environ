@@ -34,7 +34,7 @@ insertafter(Node *old, Node *new)
 void
 replace(Node *old, Node *new)
 {
-  old = new;
+  *old = *new;
 }
 
 Node *
