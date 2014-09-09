@@ -4,9 +4,9 @@
 typedef struct
 node
 {
-  char *key;
-  char *contents;
-  struct node *next;
+    char *key;
+    char *contents;
+    struct node *next;
 } Node;
 
 Node * makenode(char *key, char *contents);
