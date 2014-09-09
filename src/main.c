@@ -72,7 +72,9 @@ repl(Node *root)
     while(INT_MAX) {
 	fputs("$ ", stdout);
 	fflush(stdout);
-	fgets(input, sizeof(input), stdin);
+	
+	if (!fgets(input, sizeof(input), stdin))
+	    break;
 
 	if (input[0] == '\n') continue;
 
